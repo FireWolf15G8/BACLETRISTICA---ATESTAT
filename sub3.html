@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>sub3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+    <h1 style="color:rgb(88, 40, 0); font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;">Bacletristica</h1>
+    <i><h4 style="color:rgb(90, 18, 0); font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;">de la 9 pân' la zece</h4></i>
+
+    <hr>
+
+    <nav class="navbar">
+        <ul>
+            <li class="bara"><a href="index.html">Pagina principala</a></li>
+            <li class="bara"><a href="sub1.html">Subiectul I</a></li>
+            <li class="bara"><a href="sub2.html">Subiectul II</a></li>
+            <li class="bara"><a href="sub3.html">Subiectul III</a></li>
+            <li class="bara"><a href="quiz.html">Quiz opere bac</a></li>
+            <li class="bara"><a href="subiecte.html">Subiecte bac</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <b><h1>Subiectul 3</h1></b>
+
+    <h2>Opere necesare</h2>
+
+    <b><h3>Genul epic</h3></b>
+
+    <button type="button" class="collapsible">Ion</button>
+    <div class="content">
+        <p>”Ion” de L. Rebreanu</p>
+    </div>
+    <button type="button" class="collapsible">Ultima noapte de dragoste, întâia noapte de război</button>
+    <div class="content">
+        <p>”Ultima noapte de dragoste, întâia noapte de război” de C. Petrescu</p>
+    </div>
+    <button type="button" class="collapsible">Povestea lui Harap Alb</button>
+    <div class="content">
+        <p>”Povestea lui Harap Alb” de I. Creangă</p>
+    </div>
+    <button type="button" class="collapsible">Moara cu Noroc</button>
+    <div class="content">
+        <p>”Moara cu Noroc” de I. Slavici</p>
+    </div>
+    <button type="button" class="collapsible">Baltagul</button>
+    <div class="content">
+        <p>”Baltagul” de M. Sadoveanu</p>
+    </div>
+    <button type="button" class="collapsible">Enigma Otiliei</button>
+    <div class="content">
+        <p>”Enigma Otiliei” de G. Călinescu</p>
+    </div>
+    <button type="button" class="collapsible">Moromeții</button>
+    <div class="content">
+        <p>”Moromeții” de M. Preda</p>
+    </div>
+
+    <b><h3>Genul liric</h3></b>
+
+    <button type="button" class="collapsible">Luceafărul</button>
+    <div class="content">
+        <p>”Luceafărul” de M. Eminescu</p>
+    </div>
+    <button type="button" class="collapsible">Plumb</button>
+    <div class="content">
+        <p>”Plumb” de G. Bacovia</p>
+    </div>
+    <button type="button" class="collapsible">Testament</button>
+    <div class="content">
+        <p>”Testament” de T. Arghezi</p>
+    </div>
+    <button type="button" class="collapsible">Riga Crypto și Lapona Enigel</button>
+    <div class="content">
+        <p>”Riga Crypto și Lapona Enigel” de I. Barbu</p>
+    </div>
+    <button type="button" class="collapsible">Eu nu strivesc corola de minuni a lumii</button>
+    <div class="content">
+        <p>”Eu nu strivesc corola de minuni a lumii” de L. Blaga</p>
+    </div>
+    <button type="button" class="collapsible">Leoaică tânără, iubirea</button>
+    <div class="content">
+        <p>”Leoaică tânără, iubirea” de N. Stănescu</p>
+    </div>
+
+    <b><h3>Genul dramtic</h3></b>
+
+    <button type="button" class="collapsible">O scrisoare pierdută</button>
+    <div class="content">
+        <p>”O scrisoare pierdută” de I.L. Caragiale</p>
+    </div>
+    <button type="button" class="collapsible">Iona</button>
+    <div class="content">
+        <p>”Iona” de M. Sorescu</p>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+    </script>
+</body>
+
+</html>
